@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Medium.ttf") format("svg");
+}
+
+body {
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 20px rgb(0 41 112 / 10%);
+  height: 5.75rem;
+  background: #fff;
+  width: 100%;
+  /* position: sticky; */
+  padding: 0 4rem;
+  /* top: 0; */
+}
+.nav-tab {
+  display: none;
+}
+.paytm-nav-logo {
+  max-width: 10rem;
+  max-height: 3rem;
+}
+.nav-box {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-item {
+  color: #141414fd;
+}
+.nav-item:hover {
+  cursor: pointer;
+}
+
+div > a {
+  text-decoration: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  background-color: #000;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  color: #eee;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+/* .consumer-dropdown-content:hover {
+  background-color: aquamarine;
+} */
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+
+.sort-msg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e8e8e680;
+  text-align: center;
+  height: 2.5rem;
+}
+.signup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  background-color: #00bcef;
+  padding: 0.35rem 0.25rem;
+  gap: 0.75rem;
+  cursor: pointer;
+}
+
+.signup > a {
+  color: #eee;
+  padding-left: 1.5rem;
+}
+
+.signup > img {
+  filter: contrast(100%);
+  height: 1.75rem;
+  background-color: #002a6d;
+  padding: 2px 4px;
+  border-radius: 50%;
+}
+.signup:hover {
+  background-color: #002a6d;
+}
+.signup:hover > img {
+  background-color: #00bcef;
+}
+
+/* responsive design css */
+
+@media only screen and (max-width: 920px) {
+  .nav-container {
+    padding: 0 1.25rem;
+    height: 3.75rem;
+  }
+  .nav-box {
+    display: none;
+  }
+  .paytm-nav-logo {
+    max-width: 7rem;
+    max-height: 2rem;
+  }
+  .nav-tab {
+    display: block;
+    height: 36px;
+  }
+  .signup {
+    display: none;
+  }
+  .nav-end-btns {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  .sort-msg {
+    height: 2.75rem;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}

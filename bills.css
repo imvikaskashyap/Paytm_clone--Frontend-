@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("./assets/fonts/Poppins-Bold.ttf") format("truetype");
+}
+
+.book-pay {
+  background-color: #004b87;
+  padding: 3.25rem 3rem;
+  color: #fff;
+}
+
+.recharge-bills {
+  background-color: #00baf2;
+  padding: 3.25rem 3rem;
+  color: #fff;
+}
+.bills:hover {
+  background: #ffffff2c;
+  transition: all 0.2s ease-in-out;
+}
+.pay:hover {
+  background: #0d3e80;
+  transition: all 0.2s ease-in-out;
+}
+
+.bills,
+.pay {
+  width: 140px;
+  padding: 16px 11px 16px 16px;
+  margin-right: 32px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.bills > img,
+.pay > img {
+  width: 64px;
+  margin-bottom: 17px;
+  background: #fff;
+  border-radius: 100%;
+}
+
+.bills-head,
+.pay-head {
+  font-family: "Poppins-Bold";
+  font-size: 2.5rem;
+  margin-bottom: 3.25rem;
+  margin-left: -0.25rem;
+}
+.bills-content,
+.pay-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* responsive design css */
+@media only screen and (max-width: 920px) {
+  .book-pay,
+  .recharge-bills {
+    padding: 1rem 2rem;
+  }
+  .bills-head,
+  .pay-head {
+    font-size: 1.75rem;
+    margin: 1.25rem 0 2.25rem 0;
+    margin-left: -0.25rem;
+  }
+  .bills,
+  .pay {
+    width: 100px;
+    padding: 11px 9px 11px 11px;
+    margin-right: 22px;
+  }
+  .bills-content,
+  .pay-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

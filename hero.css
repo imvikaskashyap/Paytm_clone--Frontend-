@@ -1,0 +1,81 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  padding: 7rem 0.75rem;
+}
+
+.left-section {
+  padding-left: 3rem;
+}
+
+.left-section > img {
+  width: 80px;
+  box-shadow: 0 5px 20px rgb(0 41 112 / 10%);
+  border-radius: 16px;
+  margin-bottom: 3rem;
+}
+.left-section > h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  padding-bottom: 1.75rem;
+}
+.left-section > p {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding-bottom: 3rem;
+}
+.hero-btn {
+  padding: 12px 24px;
+  border-radius: 32px;
+  background-color: black;
+  color: #eee;
+  cursor: pointer;
+}
+.hero-btn:hover {
+  background-color: #eee;
+  color: black;
+}
+.right-section {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.right-section > img {
+  max-width: 560px;
+}
+
+/* responsive-css */
+@media only screen and (max-width: 920px) {
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 3rem;
+    padding: 5rem 0.75rem;
+  }
+  .left-section {
+    padding-left: 1.5rem;
+  }
+  .left-section > img {
+    width: 65px;
+  }
+  .left-section > h1 {
+    font-size: 2.25rem;
+    line-height: 1.1;
+    padding-bottom: 2.5rem;
+  }
+  .left-section > p {
+    font-size: 1.2rem;
+    margin-right: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+  .right-section {
+    justify-content: center;
+  }
+  .right-section > img {
+    max-width: 400px;
+  }
+}
